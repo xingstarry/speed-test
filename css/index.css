@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/************************页面************************/
+body {
+  font-size: 20px;
+  background-color: #0C1A37; }
+
+/**********************header************************/
+header {
+  height: 2.2rem;
+  background-color: #0C1A37;
+  display: flex; }
+  header h1 {
+    flex: 1; }
+    header h1 a {
+      margin: 0 auto;
+      width: 5rem;
+      height: 100%;
+      display: block;
+      text-indent: -9999px;
+      background: url(../img/logoSmall.png) no-repeat center;
+      background-size: 100%; }
+
+/**********************nav************************/
+nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  box-sizing: border-box;
+  z-index: 99; }
+  nav ul {
+    background-color: #0B152D;
+    display: flex; }
+    nav ul li {
+      flex: 1;
+      height: 2.5rem;
+      border-top: 1px solid #2A3561; }
+      nav ul li a {
+        display: block;
+        height: 2.5rem;
+        font-size: 0.6rem;
+        color: #fff;
+        text-align: center; }
+        nav ul li a:before {
+          content: '';
+          display: block;
+          width: 1.15rem;
+          height: 0.9rem;
+          margin: 0.4rem auto 0.2rem;
+          background: url(../img/navIcon.png) no-repeat 0 0;
+          background-size: 4.6rem 1.8rem; }
+      nav ul li:nth-child(1) a {
+        color: #62E809; }
+      nav ul li:nth-child(2) a:before {
+        background-position: -1.15rem 0; }
+      nav ul li:nth-child(3) a:before {
+        background-position: -2.3rem 0; }
+      nav ul li:nth-child(4) a:before {
+        background-position: -3.45rem 0; }
+    nav ul .active {
+      background-color: #0C1A37;
+      border-top: 1px solid #0C1A37; }
+      nav ul .active a:before {
+        background-position-y: -0.9rem !important; }
+
+/**********************section************************/
+.secBg {
+  position: fixed;
+  left: 0;
+  top: 2.2rem;
+  width: 100%;
+  background: url(../img/bg.png) no-repeat top;
+  background-size: 100% auto; }
+
+.secImg {
+  position: fixed;
+  left: 0;
+  bottom: 2.5rem;
+  width: 100%;
+  height: 2.975rem;
+  background: url(../img/bg2.png) no-repeat center;
+  background-size: 100%;
+  z-index: 1; }
+
+section {
+  width: 100%;
+  position: relative; }
+
+.pos {
+  position: absolute;
+  display: none;
+  width: 100%;
+  padding-bottom: 3rem; }
+
+/***********************首页************************/
+.home {
+  box-sizing: border-box;
+  padding-top: 3.5rem; }
+  .home span {
+    font-size: 0.6rem;
+    font-family: "Arial"; }
+  .home h4 {
+    font-size: 2.35rem;
+    font-weight: bold;
+    font-family: "Arial"; }
+
+/*********仪表盘**********/
+.panelBox, .testResult {
+  height: 17.4rem;
+  position: relative; }
+
+.panel {
+  width: 14.75rem;
+  height: 14.75rem;
+  margin: 0 auto; }
+  .panel .panelBg {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: url(../img/panel.png) no-repeat top;
+    background-size: 100%; }
+
+.panelCon {
+  position: absolute;
+  width: 8.5rem;
+  bottom: 0;
+  left: 50%;
+  margin-left: -4.25rem;
+  text-align: center;
+  color: #fff; }
+  .panelCon a {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color: #FEC305;
+    font-size: 0.9rem;
+    border-radius: 1.25rem;
+    border: 1px solid #FEC305;
+    background: #0C1A37; }
+  .panelCon h4 {
+    margin-bottom: 0.5rem; }
+
+/*********测试结果********/
+.testResult .panel {
+  padding-top: 4.95rem;
+  background: url(../img/testResult.png) no-repeat top;
+  background-size: 100%; }
+
+.download {
+  width: 11.5rem;
+  height: 1.9rem;
+  margin: 0 auto;
+  color: #fff;
+  background: url(../img/testResultBg.png) no-repeat 0 0;
+  background-size: 11.5rem auto; }
+  .download i {
+    margin-top: 0.1rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    background: url(../img/testResultIcon.png) no-repeat 0 0;
+    background-size: 2.2rem auto; }
+  .download em {
+    font-size: 0.6rem;
+    line-height: 1.1rem;
+    margin: 0.1rem 0.15rem 0; }
+  .download h4 {
+    margin-top: -0.45rem; }
+  .download span {
+    margin-top: 1.25rem; }
+
+.upload {
+  margin-top: 1.2rem;
+  background-position: 0 -1.9rem; }
+  .upload i {
+    background-position: -1.1rem 0; }
+
+/***********************信息************************/
+.userBox {
+  box-sizing: border-box;
+  padding: 1rem 1.5rem 2rem; }
+
+.user {
+  border-top: 1px solid #2F3A68;
+  border-bottom: 1px solid #2F3A68;
+  background-color: rgba(11, 23, 49, 0.8);
+  margin-bottom: 1.5rem; }
+  .user .userTitle {
+    font-size: 0.8rem;
+    color: #6ADAFF;
+    width: 6.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    border-radius: 0.75rem;
+    background-color: #2F3A68;
+    margin: 0 auto; }
+  .user .userInfo {
+    margin: 1rem 1.5rem; }
+    .user .userInfo p {
+      color: #fff;
+      font-size: 0.7rem;
+      line-height: 1.65rem; }
+      .user .userInfo p span {
+        margin-left: 0.5rem; }
+      .user .userInfo p a {
+        color: #fff; }
+
+/***********************测速点************************/
+.velocity, .report {
+  box-sizing: border-box;
+  padding: 1rem 1rem 2rem; }
+
+.vList li {
+  margin-bottom: 0.5rem; }
+  .vList li a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 0.8rem;
+    color: #CED0D5;
+    text-align: center;
+    background-color: rgba(10, 20, 41, 0.8);
+    border-radius: 0.3rem; }
+  .vList li .active {
+    color: #FEC305;
+    background-color: rgba(17, 38, 81, 0.9);
+    box-shadow: 0 2px 0 #2F3A68; }
+
+/***********************报告************************/
+.reportList {
+  background-color: rgba(10, 20, 41, 0.8);
+  border-radius: 0.3rem;
+  padding: 0.5rem 0; }
+  .reportList .reportTitle {
+    background-color: #0C1A37;
+    margin-bottom: 0.5rem; }
+  .reportList li {
+    display: flex; }
+    .reportList li div {
+      flex: 1;
+      color: #6896EC;
+      font-size: 0.7rem;
+      padding: 0 0.8rem;
+      line-height: 1.95rem; }
+      .reportList li div span {
+        color: #fff; }
+    .reportList li .textR {
+      text-align: right; }
+
+/*# sourceMappingURL=index.css.map */

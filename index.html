@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>网络测速</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/zepto.js"></script>
+</head>
+<body>
+  <div id="box">
+    <header>
+      <h1 class="logo"><a href="#">网络测速</a></h1>
+    </header>
+    <nav>
+      <ul>
+        <li class="active"><a href="javascript:;">首页</a></li>
+        <li><a href="javascript:;">信息</a></li>
+        <li><a href="javascript:;">测速点</a></li>
+        <li><a href="javascript:;">报告</a></li>
+      </ul>
+    </nav>
+    <span class="secBg"></span>
+    <span class="secImg"></span>
+    <section>
+      <!--------------------首页---------------------->
+      <div class="home pos" style="display:block;">
+        <!---------仪表盘--------->
+        <div class="panelBox">
+          <div class="panel">
+            <span class="panelBg"></span>
+          </div>
+          <div class="panelCon">
+            <span>Mpbs</span>
+            <h4>00.00</h4>
+            <a href="#">开始测试</a>
+          </div>
+        </div>
+        <!--------测试结果--------->
+        <div class="testResult" style="display: none">
+          <div class="panel">
+            <div class="download clear-fix">
+              <i class="fl"></i>
+              <em class="fl">下载速度</em>
+              <h4 class="fl">00.00</h4>
+              <span class="fl">Mpbs</span>
+            </div>
+            <div class="download upload clear-fix">
+              <i class="fl"></i>
+              <em class="fl">下载速度</em>
+              <h4 class="fl">00.00</h4>
+              <span class="fl">Mpbs</span>
+            </div>
+          </div>
+          <div class="panelCon">
+            <a href="#">重新测试</a>
+          </div>
+        </div>
+      </div>
+      <!--------------------信息---------------------->
+      <div class="userBox pos">
+        <div class="user">
+          <h4 class="userTitle">用户信息</h4>
+          <div class="userInfo">
+            <p>您的IP地址：<span>221.222.201.58</span></p>
+            <p>运营商：<span>221.222.201.58</span></p>
+            <p>浏览器：<span>Chrome</span></p>
+            <p>操作系统：<span>Windows 10</span></p>
+          </div>
+        </div>
+        <div class="user">
+          <h4 class="userTitle">测速点信息</h4>
+          <div class="userInfo">
+            <p>当前测速点：<span>北京双线测速</span></p>
+            <p>测速点IP：<span>1.119.*.*</span></p>
+            <p>位置：<span>中国北京北京-ISP</span></p>
+            <p>赞助：<span>北京双线测速</span></p>
+            <p><a href="#">北京双线测速</a></p>
+          </div>
+        </div>
+      </div>
+      <!--------------------测速点--------------------->
+      <div class="velocity pos">
+        <ul class="vList">
+          <li><a href="#" class="active">测试点一</a></li>
+          <li><a href="#">测试点一</a></li>
+          <li><a href="#">测试点一</a></li>
+          <li><a href="#">测试点一</a></li>
+        </ul>
+      </div>
+      <!--------------------报告---------------------->
+      <div class="report pos">
+        <ul class="reportList">
+          <li class="reportTitle">
+            <div>上传速度</div>
+            <div>下载速度</div>
+            <div class="textR">测试时间</div>
+          </li>
+          <li>
+            <div><span>8.83</span>Mbps</div>
+            <div><span>1.79</span>Mbps</div>
+            <div class="textR">2017-11-17</div>
+          </li>
+          <li>
+            <div><span>8.83</span>Mbps</div>
+            <div><span>1.79</span>Mbps</div>
+            <div class="textR">2017-11-17</div>
+          </li>
+          <li>
+            <div><span>8.83</span>Mbps</div>
+            <div><span>1.79</span>Mbps</div>
+            <div class="textR">2017-11-17</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+<script src="js/index.js"></script>
+
+</html>
