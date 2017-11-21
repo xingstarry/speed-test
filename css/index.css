@@ -19,7 +19,7 @@ header {
       display: block;
       text-indent: -9999px;
       background: url(../img/logoSmall.png) no-repeat center;
-      background-size: 100%; }
+      background-size: 100% auto; }
 
 /**********************nav************************/
 nav {
@@ -50,7 +50,7 @@ nav {
           height: 0.9rem;
           margin: 0.4rem auto 0.2rem;
           background: url(../img/navIcon.png) no-repeat 0 0;
-          background-size: 4.6rem 1.8rem; }
+          background-size: 4.6rem 1.85rem; }
       nav ul li:nth-child(1) a {
         color: #62E809; }
       nav ul li:nth-child(2) a:before {
@@ -63,7 +63,7 @@ nav {
       background-color: #0C1A37;
       border-top: 1px solid #0C1A37; }
       nav ul .active a:before {
-        background-position-y: -0.9rem !important; }
+        background-position-y: -0.95rem !important; }
 
 /**********************section************************/
 .secBg {
