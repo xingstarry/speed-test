@@ -36,5 +36,20 @@ Zepto(function($){
     aVList.on('click',function () {
         aVList.removeClass('active');
         $(this).addClass('active');
+    });
+
+
+
+    var beginTest = $('#beginTest');
+    var resetTest = $('#resetTest');
+    var panelBox = $('.panelBox');
+    var testResult = $('.testResult');
+    beginTest.on('click',function () {
+        panelBox.css('display','none');
+        testResult.css('display','block');
+    });
+    resetTest.on('click',function () {
+        testResult.css('display','none');
+        panelBox.css('display','block');
     })
 });
