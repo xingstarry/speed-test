@@ -41,7 +41,7 @@ Zepto(function($){
 
 
     var beginTest = $('#beginTest');
-    var resetTest = $('#resetTest');
+    var resetTest = $('#resetTes');
     var panelBox = $('.panelBox');
     var testResult = $('.testResult');
     beginTest.on('click',function () {
