@@ -98,7 +98,7 @@ section {
 /***********************首页************************/
 .home {
   box-sizing: border-box;
-  padding-top: 3.5rem; }
+  padding-top: 3rem; }
   .home span {
     font-size: 0.6rem;
     font-family: "Arial"; }
@@ -240,6 +240,8 @@ section {
   .reportList .reportTitle {
     background-color: #0C1A37;
     margin-bottom: 0.5rem; }
+    .reportList .reportTitle div {
+      color: #6AD9FF; }
   .reportList li {
     display: flex; }
     .reportList li div {
@@ -247,9 +249,12 @@ section {
       color: #6896EC;
       font-size: 0.7rem;
       padding: 0 0.8rem;
-      line-height: 1.95rem; }
+      line-height: 1.95rem;
+      font-family: "Arial"; }
       .reportList li div span {
-        color: #fff; }
+        color: #fff;
+        margin-right: 0.1rem;
+        font-family: "Arial"; }
     .reportList li .textR {
       text-align: right; }
 
